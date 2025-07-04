@@ -72,7 +72,7 @@ const NavBar = ({ darkMode, setDarkMode, customization, handleCustomizationChang
         <div className="relative">
           <button 
             onClick={() => setShowSettings(!showSettings)}
-            className={`p-3 rounded-xl ${darkMode ? 'hover:bg-gray-800/70 bg-gray-900/50' : 'hover:bg-gray-200/70 bg-white/50'} transition-all duration-300 shadow-lg backdrop-blur-sm transform hover:scale-105 ${showSettings ? 'ring-2 ring-blue-500' : ''}`}
+            className={`p-3 rounded-xl ${darkMode ? 'hover:bg-gray-800/70 bg-gray-900/50' : 'hover:bg-gray-200/70 bg-white/50'} transition-all duration-300 shadow-lg backdrop-blur-sm transform hover:scale-105 ${showSettings ? 'ring-2 ring-orange-500' : ''}`}
             aria-label="Open customization settings"
           >
             <Settings className={`w-5 h-5 transition-transform duration-300 ${showSettings ? 'rotate-180' : ''}`} />
