@@ -36,7 +36,7 @@ const PlaylistsSection = ({
       icon: <GraduationCap className="w-5 h-5" />,
       subjects: {
         mathematics: {
-          title: "Engineering Mathematics I",
+          title: "Calculus",
           color: "from-blue-500 to-blue-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('math') || 
@@ -46,7 +46,7 @@ const PlaylistsSection = ({
           )
         },
         physics: {
-          title: "Engineering Physics",
+          title: "Electrical And Electronics Engineering",
           color: "from-purple-500 to-purple-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('physics') ||
@@ -55,8 +55,17 @@ const PlaylistsSection = ({
           )
         },
         chemistry: {
-          title: "Engineering Chemistry",
+          title: "Life Skill",
           color: "from-green-500 to-green-600",
+          playlists: filteredPlaylists.filter(p => 
+            p.title.toLowerCase().includes('chemistry') ||
+            p.title.toLowerCase().includes('chemical') ||
+            p.title.toLowerCase().includes('organic')
+          )
+        },
+        Python: {
+          title: "Python",
+          color: "from-pink-500 to-green-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('chemistry') ||
             p.title.toLowerCase().includes('chemical') ||
@@ -70,7 +79,7 @@ const PlaylistsSection = ({
       icon: <BookOpen className="w-5 h-5" />,
       subjects: {
         mathematics2: {
-          title: "Engineering Mathematics II",
+          title: "Linear algebra",
           color: "from-blue-500 to-blue-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('advanced math') ||
@@ -79,7 +88,7 @@ const PlaylistsSection = ({
           )
         },
         mechanics: {
-          title: "Engineering Mechanics",
+          title: "Discrete Mathematics",
           color: "from-red-500 to-red-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('statics') ||
@@ -88,8 +97,34 @@ const PlaylistsSection = ({
           )
         },
         graphics: {
-          title: "Engineering Graphics",
+          title: "Java",
           color: "from-indigo-500 to-indigo-600",
+          playlists: filteredPlaylists.filter(p => 
+            p.title.toLowerCase().includes('graphics') ||
+            p.title.toLowerCase().includes('drawing') ||
+            p.title.toLowerCase().includes('cad')
+          )
+        }, Digitaldesign: {
+          title: "Digital Design",
+          color: "from-indigo-500 to-red-600",
+          playlists: filteredPlaylists.filter(p => 
+            p.title.toLowerCase().includes('graphics') ||
+            p.title.toLowerCase().includes('drawing') ||
+            p.title.toLowerCase().includes('cad')
+          )
+        },
+        Mechanics: {
+          title: "Mechanics",
+          color: "from-yellow-500 to-red-600",
+          playlists: filteredPlaylists.filter(p => 
+            p.title.toLowerCase().includes('graphics') ||
+            p.title.toLowerCase().includes('drawing') ||
+            p.title.toLowerCase().includes('cad')
+          )
+        },
+        Enviroment: {
+          title: "Enviroment",
+          color: "from-red-500 to-orange-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('graphics') ||
             p.title.toLowerCase().includes('drawing') ||
