@@ -49,14 +49,14 @@ const ResourcesSection = ({
   const mockResources = [
     {
       id: 1,
-      title: "Advanced Calculus Study Guide",
+      title: " Calculus ",
       subject: "Mathematics",
       type: "PDF",
       size: "2.4 MB",
       downloads: 1250,
       rating: 4.8,
       tags: ["calculus", "derivatives", "integrals"],
-      url: "/resources/calculus-guide.pdf",
+      url: "https://drive.google.com/drive/folders/1Zac7F1a4HXouzirrJ7G16gj99gNyEAGd",
       description: "Comprehensive guide covering advanced calculus concepts with worked examples."
     },
     {
@@ -68,7 +68,7 @@ const ResourcesSection = ({
       downloads: 2100,
       rating: 4.9,
       tags: ["mechanics", "physics", "video-series"],
-      url: "/resources/mechanics-videos",
+      url: "https://drive.google.com/drive/folders/1a7fwGQH4HiohuRqDem0c_0h-xCWvDZVg",
       description: "Complete video series on classical mechanics with animations."
     },
     {
