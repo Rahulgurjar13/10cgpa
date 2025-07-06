@@ -523,7 +523,7 @@ const StudentResourceLanding = () => {
       downloads: 1050,
       rating: 4.4,
       tags: ['cpp', 'programming', 'guide'],
-      url: 'https://drive.google.com/drive/folders/1jGZKIZwco31hqNNimxwsyIxSIMjQKAaf?usp=drive_link',
+      url: 'https://drive.google.com/drive/folders/1a7fwGQH4HiohuRqDem0c_0h-xCWvDZVg?usp=drive_link',
     },
   ];
 
