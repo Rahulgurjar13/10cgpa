@@ -64,18 +64,18 @@ const StudentResourceLanding = () => {
   // Enhanced playlist data with more comprehensive coverage
   const videoPlaylists = [
     // Mathematics - Semester 1
-    {
-      id: 1,
-      title: 'Complete Calculus Series ',
-      subject: 'Mathematics',
-      thumbnail: 'https://orientation.engsci.utoronto.ca/wp-content/uploads/2022/07/best-calculus-textbooks.png',
-      channel: 'Calculus semester 1',
-      videos: 40,
-      duration: '12 hrs',
-      views: '2.1M',
-      rating: 4.8,
-      link: 'https://youtube.com/playlist?list=PLRZStkcHy4ATGBwKo1wabyXqjzoEbLLxa&si=q0rrNbWhHpl8kwkA',
-    },
+    // {
+    //   id: 1,
+    //   title: 'Complete Calculus Series ',
+    //   subject: 'Mathematics',
+    //   thumbnail: 'https://orientation.engsci.utoronto.ca/wp-content/uploads/2022/07/best-calculus-textbooks.png',
+    //   channel: 'Calculus semester 1',
+    //   videos: 40,
+    //   duration: '12 hrs',
+    //   views: '2.1M',
+    //   rating: 4.8,
+    //   link: 'https://youtube.com/playlist?list=PLRZStkcHy4ATGBwKo1wabyXqjzoEbLLxa&si=q0rrNbWhHpl8kwkA',
+    // },
     {
       id: 2,
       title: 'Complete Calculus Series',
