@@ -39,36 +39,27 @@ const PlaylistsSection = ({
           title: "Calculus",
           color: "from-blue-500 to-blue-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('math') || 
-            p.title.toLowerCase().includes('calculus') ||
-            p.title.toLowerCase().includes('algebra') ||
-            p.channel.toLowerCase().includes('math')
+      
+            p.title.toLowerCase().includes('calculus') 
+       
           )
         },
         physics: {
           title: "Electrical And Electronics Engineering",
           color: "from-purple-500 to-purple-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('physics') ||
+            p.title.toLowerCase().includes('electrical') ||
             p.title.toLowerCase().includes('mechanics') ||
             p.title.toLowerCase().includes('waves')
           )
         },
-        chemistry: {
-          title: "Life Skill",
-          color: "from-green-500 to-green-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('chemistry') ||
-            p.title.toLowerCase().includes('chemical') ||
-            p.title.toLowerCase().includes('organic')
-          )
-        },
+        
         Python: {
           title: "Python",
           color: "from-pink-500 to-green-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('chemistry') ||
-            p.title.toLowerCase().includes('chemical') ||
+            p.title.toLowerCase().includes('python') ||
+            p.title.toLowerCase().includes('python') ||
             p.title.toLowerCase().includes('organic')
           )
         }
@@ -79,7 +70,7 @@ const PlaylistsSection = ({
       icon: <BookOpen className="w-5 h-5" />,
       subjects: {
         mathematics2: {
-          title: "Linear algebra",
+          title: "Linear algebra ",
           color: "from-blue-500 to-blue-600",
           playlists: filteredPlaylists.filter(p => 
             p.title.toLowerCase().includes('advanced math') ||
@@ -91,45 +82,35 @@ const PlaylistsSection = ({
           title: "Discrete Mathematics",
           color: "from-red-500 to-red-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('statics') ||
-            p.title.toLowerCase().includes('dynamics') ||
-            p.title.toLowerCase().includes('strength')
+            p.title.toLowerCase().includes('discrete')
+        
           )
         },
         graphics: {
           title: "Java",
           color: "from-indigo-500 to-indigo-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('graphics') ||
-            p.title.toLowerCase().includes('drawing') ||
-            p.title.toLowerCase().includes('cad')
+            p.title.toLowerCase().includes('java') 
           )
         }, Digitaldesign: {
-          title: "Digital Design",
+          title: "Digital Design ",
           color: "from-indigo-500 to-red-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('graphics') ||
-            p.title.toLowerCase().includes('drawing') ||
-            p.title.toLowerCase().includes('cad')
+            p.title.toLowerCase().includes('digital')
           )
         },
         Mechanics: {
           title: "Mechanics",
           color: "from-yellow-500 to-red-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('graphics') ||
-            p.title.toLowerCase().includes('drawing') ||
-            p.title.toLowerCase().includes('cad')
+            p.title.toLowerCase().includes('mechanics)') 
           )
         },
         Enviroment: {
-          title: "Enviroment",
+          title: "Mechanics",
           color: "from-red-500 to-orange-600",
           playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('graphics') ||
-            p.title.toLowerCase().includes('drawing') ||
-            p.title.toLowerCase().includes('cad')
-          )
+            p.title.toLowerCase().includes('mechanics') )
         }
       }
     },
@@ -233,7 +214,7 @@ const PlaylistsSection = ({
         <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
           {playlist.title}
         </h3>
-        <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} text-sm mb-3`}>
+        <p className={`${darkMode ? 'text-red-500' : 'text-red-500'} text-1 mb-3`}>
           {playlist.channel}
         </p>
 
