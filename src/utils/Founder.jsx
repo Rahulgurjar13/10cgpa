@@ -21,7 +21,7 @@ const FounderSection = ({
     {
       name: "Khushi Nain",
       position: "ATC Tech Team Member",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b412?w=240&h=320&fit=crop&crop=face",
+      image: "/khushi nain.jpeg",
       linkedin: "https://www.linkedin.com/in/khushi-nain17/"
     }
   ];
