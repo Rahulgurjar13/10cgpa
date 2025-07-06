@@ -57,7 +57,7 @@ const StudentResourceLanding = () => {
   const subjects = [
     { name: 'Mathematics', icon: '📐', resources: 45, color: 'from-blue-500 to-blue-700', playlists: 12 },
     { name: 'Physics', icon: '⚡', resources: 38, color: 'from-purple-500 to-purple-700', playlists: 8 },
-    { name: 'Chemistry', icon: '🧪', resources: 42, color: 'from-green-500 to-green-700', playlists: 10 },
+    { name: 'Life Skills', icon: '🧪', resources: 42, color: 'from-green-500 to-green-700', playlists: 10 },
     { name: 'Programming', icon: '💻', resources: 52, color: 'from-orange-500 to-orange-700', playlists: 15 },
   ];
 
@@ -539,6 +539,7 @@ const StudentResourceLanding = () => {
     purple: { primary: 'from-purple-500 to-purple-700', accent: 'purple-500' },
     green: { primary: 'from-green-500 to-green-700', accent: 'green-500' },
     orange: { primary: 'from-orange-500 to-orange-700', accent: 'orange-500' },
+    Pink: { primary: 'from-orange-500 to-orange-700', accent: 'pink-500' },
     
   };
 
