@@ -126,7 +126,7 @@ const FounderSection = ({
             
             <div className={`inline-flex items-center gap-2 ${colors.tag} px-3 py-1.5 rounded-full border transition-all duration-500 ease-out`}>
               <span className={`${colors.tagText} font-medium text-xs`}>
-                {index === 0 ? 'Leadership' : 'Technology'}
+                {index === 0 ? 'Developer' : 'Developer'}
               </span>
             </div>
             

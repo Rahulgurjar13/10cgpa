@@ -86,7 +86,7 @@ const StudentResourceLanding = () => {
       duration: '16 hrs',
       views: '1.8M',
       rating: 4.9,
-      link: 'https://youtube.com/playlist?list=PL221E2BBF13BECF6C',
+      link: 'https://www.youtube.com/playlist?list=PLHlaDQr7LlT_IUb8hBfG2TTYh9sdDsdIj',
     },
     // {
     //   id: 3,

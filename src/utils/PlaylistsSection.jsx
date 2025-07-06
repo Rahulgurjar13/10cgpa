@@ -47,9 +47,8 @@ const PlaylistsSection = ({
           color: "from-purple-500 to-purple-600",
           playlists: filteredPlaylists.filter(
             (p) =>
-              p.title.toLowerCase().includes("electrical") ||
-              p.title.toLowerCase().includes("mechanics") ||
-              p.title.toLowerCase().includes("waves")
+              p.title.toLowerCase().includes("electrical") 
+          
           ),
         },
 
