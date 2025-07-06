@@ -57,7 +57,7 @@ const StudentResourceLanding = () => {
   const subjects = [
     { name: 'Mathematics', icon: '📐', resources: 45, color: 'from-blue-500 to-blue-700', playlists: 12 },
     { name: 'Physics', icon: '⚡', resources: 38, color: 'from-purple-500 to-purple-700', playlists: 8 },
-    { name: 'Life Skills', icon: '🧪', resources: 42, color: 'from-green-500 to-green-700', playlists: 10 },
+    { name: 'Web Dev', icon: '🧪', resources: 42, color: 'from-green-500 to-green-700', playlists: 10 },
     { name: 'Programming', icon: '💻', resources: 52, color: 'from-orange-500 to-orange-700', playlists: 15 },
   ];
 
@@ -536,10 +536,15 @@ const StudentResourceLanding = () => {
   const colorSchemes = {
    
     blue: { primary: 'from-blue-500 to-blue-700', accent: 'blue-500' },
-    purple: { primary: 'from-purple-500 to-purple-700', accent: 'purple-500' },
-    green: { primary: 'from-green-500 to-green-700', accent: 'green-500' },
-    orange: { primary: 'from-orange-500 to-orange-700', accent: 'orange-500' },
-    Pink: { primary: 'from-orange-500 to-orange-700', accent: 'pink-500' },
+  purple: { primary: 'from-purple-500 to-purple-700', accent: 'purple-500' },
+  green: { primary: 'from-green-500 to-green-700', accent: 'green-500' },
+  orange: { primary: 'from-orange-500 to-orange-700', accent: 'orange-500' },
+  pink: { primary: 'from-pink-500 to-pink-700', accent: 'pink-500' },
+  red: { primary: 'from-red-500 to-red-700', accent: 'red-500' },
+  teal: { primary: 'from-teal-500 to-teal-700', accent: 'teal-500' },
+  indigo: { primary: 'from-indigo-500 to-indigo-700', accent: 'indigo-500' },
+  slate: { primary: 'from-slate-500 to-slate-700', accent: 'slate-500' },
+  emerald: { primary: 'from-emerald-500 to-emerald-700', accent: 'emerald-500' }
     
   };
 
