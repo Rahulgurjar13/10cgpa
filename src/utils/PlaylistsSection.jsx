@@ -1,20 +1,20 @@
 // src/PlaylistsSection.js
-import React, { useState } from 'react';
-import { 
-  Grid, 
-  List, 
-  Play, 
-  Youtube, 
-  Eye, 
-  Star, 
-  Heart, 
-  Share2, 
-  ChevronDown, 
+import React, { useState } from "react";
+import {
+  Grid,
+  List,
+  Play,
+  Youtube,
+  Eye,
+  Star,
+  Heart,
+  Share2,
+  ChevronDown,
   ChevronRight,
   BookOpen,
   Code,
-  GraduationCap
-} from 'lucide-react';
+  GraduationCap,
+} from "lucide-react";
 
 const PlaylistsSection = ({
   filteredPlaylists,
@@ -38,32 +38,32 @@ const PlaylistsSection = ({
         mathematics: {
           title: "Calculus",
           color: "from-blue-500 to-blue-600",
-          playlists: filteredPlaylists.filter(p => 
-      
-            p.title.toLowerCase().includes('calculus') 
-       
-          )
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("calculus")
+          ),
         },
         physics: {
           title: "Electrical And Electronics Engineering",
           color: "from-purple-500 to-purple-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('electrical') ||
-            p.title.toLowerCase().includes('mechanics') ||
-            p.title.toLowerCase().includes('waves')
-          )
+          playlists: filteredPlaylists.filter(
+            (p) =>
+              p.title.toLowerCase().includes("electrical") ||
+              p.title.toLowerCase().includes("mechanics") ||
+              p.title.toLowerCase().includes("waves")
+          ),
         },
-        
+
         Python: {
           title: "Python",
           color: "from-pink-500 to-green-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('python') ||
-            p.title.toLowerCase().includes('python') ||
-            p.title.toLowerCase().includes('organic')
-          )
-        }
-      }
+          playlists: filteredPlaylists.filter(
+            (p) =>
+              p.title.toLowerCase().includes("python") ||
+              p.title.toLowerCase().includes("python") ||
+              p.title.toLowerCase().includes("organic")
+          ),
+        },
+      },
     },
     sem2: {
       title: "Semester 2",
@@ -72,47 +72,46 @@ const PlaylistsSection = ({
         mathematics2: {
           title: "Linear algebra ",
           color: "from-blue-500 to-blue-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('advanced math') ||
-            p.title.toLowerCase().includes('statistics') ||
-            p.title.toLowerCase().includes('probability')
-          )
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("linear")
+          ),
         },
         mechanics: {
           title: "Discrete Mathematics",
           color: "from-red-500 to-red-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('discrete')
-        
-          )
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("discrete")
+          ),
         },
         graphics: {
           title: "Java",
           color: "from-indigo-500 to-indigo-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('java') 
-          )
-        }, Digitaldesign: {
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("java")
+          ),
+        },
+        Digitaldesign: {
           title: "Digital Design ",
           color: "from-indigo-500 to-red-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('digital')
-          )
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("digital")
+          ),
         },
         Mechanics: {
           title: "Mechanics",
           color: "from-yellow-500 to-red-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('mechanics)') 
-          )
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("mechanics)")
+          ),
         },
         Enviroment: {
           title: "Mechanics",
           color: "from-red-500 to-orange-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('mechanics') )
-        }
-      }
+          playlists: filteredPlaylists.filter((p) =>
+            p.title.toLowerCase().includes("mechanics")
+          ),
+        },
+      },
     },
     coding: {
       title: "Programming & Coding",
@@ -121,41 +120,44 @@ const PlaylistsSection = ({
         cpp: {
           title: "C++ Programming",
           color: "from-cyan-500 to-cyan-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('c++') ||
-            p.title.toLowerCase().includes('cpp') ||
-            p.title.toLowerCase().includes('data structure')
-          )
+          playlists: filteredPlaylists.filter(
+            (p) =>
+              p.title.toLowerCase().includes("c++") ||
+              p.title.toLowerCase().includes("cpp") ||
+              p.title.toLowerCase().includes("data structure")
+          ),
         },
         python: {
           title: "Python Programming",
           color: "from-yellow-500 to-yellow-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('python') ||
-            p.title.toLowerCase().includes('django') ||
-            p.title.toLowerCase().includes('flask')
-          )
+          playlists: filteredPlaylists.filter(
+            (p) =>
+              p.title.toLowerCase().includes("python") ||
+              p.title.toLowerCase().includes("django") ||
+              p.title.toLowerCase().includes("flask")
+          ),
         },
         web: {
           title: "Web Development",
           color: "from-orange-500 to-orange-600",
-          playlists: filteredPlaylists.filter(p => 
-            p.title.toLowerCase().includes('web') ||
-            p.title.toLowerCase().includes('html') ||
-            p.title.toLowerCase().includes('css') ||
-            p.title.toLowerCase().includes('javascript') ||
-            p.title.toLowerCase().includes('react')
-          )
-        }
-      }
-    }
+          playlists: filteredPlaylists.filter(
+            (p) =>
+              p.title.toLowerCase().includes("web") ||
+              p.title.toLowerCase().includes("html") ||
+              p.title.toLowerCase().includes("css") ||
+              p.title.toLowerCase().includes("javascript") ||
+              p.title.toLowerCase().includes("react")
+          ),
+        },
+      },
+    },
   };
 
   // Fallback: if no playlists match the filters above, show all in a general section
-  const uncategorizedPlaylists = filteredPlaylists.filter(playlist => {
-    return !Object.values(organizedPlaylists).some(category =>
-      Object.values(category.subjects).some(subject =>
-        subject.playlists.some(p => p.id === playlist.id)
+  const uncategorizedPlaylists = filteredPlaylists.filter((playlist) => {
+    return !Object.values(organizedPlaylists).some((category) =>
+      Object.values(category.subjects).some((subject) =>
+        subject.playlists.some((p) => p.id === playlist.id)
       )
     );
   });
@@ -169,17 +171,17 @@ const PlaylistsSection = ({
         all: {
           title: "Featured Playlists",
           color: "from-gray-500 to-gray-600",
-          playlists: uncategorizedPlaylists
-        }
-      }
+          playlists: uncategorizedPlaylists,
+        },
+      },
     };
   }
 
   const toggleSection = (category, subject) => {
     const key = `${category}-${subject}`;
-    setExpandedSections(prev => ({
+    setExpandedSections((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key],
     }));
   };
 
@@ -187,8 +189,8 @@ const PlaylistsSection = ({
     <div
       className={`${
         darkMode
-          ? 'bg-gray-900/50 border-gray-800 hover:border-gray-700'
-          : 'bg-white/50 border-gray-200 hover:border-gray-300'
+          ? "bg-gray-900/50 border-gray-800 hover:border-gray-700"
+          : "bg-white/50 border-gray-200 hover:border-gray-300"
       } rounded-2xl overflow-hidden border hover:shadow-lg transition-all duration-300 group`}
     >
       <div className="relative">
@@ -197,8 +199,10 @@ const PlaylistsSection = ({
           alt={playlist.title}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
           onError={(e) => {
-            console.error(`Failed to load thumbnail for ${playlist.title}: ${e.target.src}`);
-            e.target.src = '/images/placeholder.jpg';
+            console.error(
+              `Failed to load thumbnail for ${playlist.title}: ${e.target.src}`
+            );
+            e.target.src = "/images/placeholder.jpg";
           }}
         />
         <div className="absolute top-4 right-4 bg-red-600 text-white px-2 py-1 rounded-full text-xs font-bold flex items-center space-x-1">
@@ -214,7 +218,11 @@ const PlaylistsSection = ({
         <h3 className="text-xl font-bold mb-2 group-hover:text-blue-400 transition-colors">
           {playlist.title}
         </h3>
-        <p className={`${darkMode ? 'text-red-500' : 'text-red-500'} text-1 mb-3`}>
+        <p
+          className={`${
+            darkMode ? "text-red-500" : "text-red-500"
+          } text-1 mb-3`}
+        >
           {playlist.channel}
         </p>
 
@@ -233,8 +241,8 @@ const PlaylistsSection = ({
             onClick={() => toggleFavorite(playlist.id)}
             className={`p-2 rounded-full transition-colors ${
               favoriteResources.includes(playlist.id)
-                ? 'text-red-500'
-                : `${darkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-200'}`
+                ? "text-red-500"
+                : `${darkMode ? "hover:bg-gray-800" : "hover:bg-gray-200"}`
             }`}
             aria-label={
               favoriteResources.includes(playlist.id)
@@ -243,7 +251,9 @@ const PlaylistsSection = ({
             }
           >
             <Heart
-              className={`w-5 h-5 ${favoriteResources.includes(playlist.id) ? 'fill-current' : ''}`}
+              className={`w-5 h-5 ${
+                favoriteResources.includes(playlist.id) ? "fill-current" : ""
+              }`}
             />
           </button>
         </div>
@@ -264,7 +274,7 @@ const PlaylistsSection = ({
           <button
             onClick={() => handleShare(playlist.title, playlist.link)}
             className={`p-2 rounded-full ${
-              darkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-200'
+              darkMode ? "hover:bg-gray-800" : "hover:bg-gray-200"
             } transition-colors`}
             aria-label={`Share ${playlist.title}`}
           >
@@ -280,29 +290,31 @@ const PlaylistsSection = ({
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-4xl font-bold">
           <span
-            className={`bg-gradient-to-r ${colorSchemes[customization.accentColor].primary} bg-clip-text text-transparent`}
+            className={`bg-gradient-to-r ${
+              colorSchemes[customization.accentColor].primary
+            } bg-clip-text text-transparent`}
           >
             Academic Resources
           </span>
         </h2>
         <div className="flex items-center space-x-4">
           <button
-            onClick={() => setViewMode('grid')}
+            onClick={() => setViewMode("grid")}
             className={`p-2 rounded-lg transition-colors ${
-              viewMode === 'grid'
+              viewMode === "grid"
                 ? `bg-${customization.accentColor}-500 text-white`
-                : `${darkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-200'}`
+                : `${darkMode ? "hover:bg-gray-800" : "hover:bg-gray-200"}`
             }`}
             aria-label="Switch to grid view"
           >
             <Grid className="w-5 h-5" />
           </button>
           <button
-            onClick={() => setViewMode('list')}
+            onClick={() => setViewMode("list")}
             className={`p-2 rounded-lg transition-colors ${
-              viewMode === 'list'
+              viewMode === "list"
                 ? `bg-${customization.accentColor}-500 text-white`
-                : `${darkMode ? 'hover:bg-gray-800' : 'hover:bg-gray-200'}`
+                : `${darkMode ? "hover:bg-gray-800" : "hover:bg-gray-200"}`
             }`}
             aria-label="Switch to list view"
           >
@@ -312,76 +324,121 @@ const PlaylistsSection = ({
       </div>
 
       {filteredPlaylists.length === 0 ? (
-        <p className={`text-center ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
+        <p
+          className={`text-center ${
+            darkMode ? "text-gray-400" : "text-gray-600"
+          }`}
+        >
           No playlists match your search or filters.
         </p>
       ) : (
         <div className="space-y-12">
           {Object.entries(organizedPlaylists).map(([categoryKey, category]) => {
             // Check if this category has any playlists
-            const hasPlaylists = Object.values(category.subjects).some(subject => subject.playlists.length > 0);
-            
+            const hasPlaylists = Object.values(category.subjects).some(
+              (subject) => subject.playlists.length > 0
+            );
+
             if (!hasPlaylists) return null;
 
             return (
               <div key={categoryKey} className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className={`p-3 rounded-xl bg-gradient-to-r ${colorSchemes[customization.accentColor].primary}`}>
+                  <div
+                    className={`p-3 rounded-xl bg-gradient-to-r ${
+                      colorSchemes[customization.accentColor].primary
+                    }`}
+                  >
                     {category.icon}
                   </div>
                   <h3 className="text-3xl font-bold">
-                    <span className={`bg-gradient-to-r ${colorSchemes[customization.accentColor].primary} bg-clip-text text-transparent`}>
+                    <span
+                      className={`bg-gradient-to-r ${
+                        colorSchemes[customization.accentColor].primary
+                      } bg-clip-text text-transparent`}
+                    >
                       {category.title}
                     </span>
                   </h3>
                 </div>
 
                 <div className="space-y-4">
-                  {Object.entries(category.subjects).map(([subjectKey, subject]) => {
-                    if (subject.playlists.length === 0) return null;
+                  {Object.entries(category.subjects).map(
+                    ([subjectKey, subject]) => {
+                      if (subject.playlists.length === 0) return null;
 
-                    const isExpanded = expandedSections[`${categoryKey}-${subjectKey}`];
-                    
-                    return (
-                      <div key={subjectKey} className={`rounded-2xl overflow-hidden border ${
-                        darkMode ? 'bg-gray-900/30 border-gray-800' : 'bg-white/30 border-gray-200'
-                      }`}>
-                        <button
-                          onClick={() => toggleSection(categoryKey, subjectKey)}
-                          className={`w-full p-6 flex items-center justify-between text-left transition-colors ${
-                            darkMode ? 'hover:bg-gray-800/50' : 'hover:bg-gray-50'
+                      const isExpanded =
+                        expandedSections[`${categoryKey}-${subjectKey}`];
+
+                      return (
+                        <div
+                          key={subjectKey}
+                          className={`rounded-2xl overflow-hidden border ${
+                            darkMode
+                              ? "bg-gray-900/30 border-gray-800"
+                              : "bg-white/30 border-gray-200"
                           }`}
                         >
-                          <div className="flex items-center space-x-4">
-                            <div className={`p-2 rounded-lg bg-gradient-to-r ${subject.color}`}>
-                              <BookOpen className="w-5 h-5 text-white" />
+                          <button
+                            onClick={() =>
+                              toggleSection(categoryKey, subjectKey)
+                            }
+                            className={`w-full p-6 flex items-center justify-between text-left transition-colors ${
+                              darkMode
+                                ? "hover:bg-gray-800/50"
+                                : "hover:bg-gray-50"
+                            }`}
+                          >
+                            <div className="flex items-center space-x-4">
+                              <div
+                                className={`p-2 rounded-lg bg-gradient-to-r ${subject.color}`}
+                              >
+                                <BookOpen className="w-5 h-5 text-white" />
+                              </div>
+                              <div>
+                                <h4 className="text-xl font-bold">
+                                  {subject.title}
+                                </h4>
+                                <p
+                                  className={`text-sm ${
+                                    darkMode ? "text-gray-400" : "text-gray-600"
+                                  }`}
+                                >
+                                  {subject.playlists.length} playlist
+                                  {subject.playlists.length !== 1 ? "s" : ""}{" "}
+                                  available
+                                </p>
+                              </div>
                             </div>
-                            <div>
-                              <h4 className="text-xl font-bold">{subject.title}</h4>
-                              <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-                                {subject.playlists.length} playlist{subject.playlists.length !== 1 ? 's' : ''} available
-                              </p>
+                            {isExpanded ? (
+                              <ChevronDown className="w-5 h-5" />
+                            ) : (
+                              <ChevronRight className="w-5 h-5" />
+                            )}
+                          </button>
+
+                          {isExpanded && (
+                            <div className="px-6 pb-6">
+                              <div
+                                className={`grid ${
+                                  viewMode === "grid"
+                                    ? "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+                                    : "grid-cols-1 gap-4"
+                                }`}
+                              >
+                                {subject.playlists.map((playlist) => (
+                                  <PlaylistCard
+                                    key={playlist.id}
+                                    playlist={playlist}
+                                  />
+                                ))}
+                              </div>
                             </div>
-                          </div>
-                          {isExpanded ? <ChevronDown className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
-                        </button>
-                        
-                        {isExpanded && (
-                          <div className="px-6 pb-6">
-                            <div className={`grid ${
-                              viewMode === 'grid'
-                                ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'
-                                : 'grid-cols-1 gap-4'
-                            }`}>
-                              {subject.playlists.map(playlist => (
-                                <PlaylistCard key={playlist.id} playlist={playlist} />
-                              ))}
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
+                          )}
+                        </div>
+                      );
+                    }
+                  )}
                 </div>
               </div>
             );

@@ -1,6 +1,7 @@
 // src/HeroSection.js
 import React from 'react';
 import { ArrowRight, BookOpen, Award, TrendingUp } from 'lucide-react';
+import FounderSection from './Founder';
 
 const HeroSection = ({ isVisible, activeSubject, setActiveSubject, subjects, customization, colorSchemes, darkMode }) => {
   return (
@@ -66,43 +67,11 @@ const HeroSection = ({ isVisible, activeSubject, setActiveSubject, subjects, cus
       </div>
 
       <div className={`flex justify-center lg:justify-end transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-        <div className="relative">
-          <div className="w-96 h-96 bg-gradient-to-br from-purple-400 via-pink-300 to-purple-300 rounded-3xl flex items-center justify-center overflow-hidden relative">
-            <div className="absolute top--4 right-4 w-16 h-16 bg-yellow-400 rounded-2xl flex items-center justify-center animate-bounce shadow-lg">
-              <Award className="w-8 h-8 text-yellow-800" />
-            </div>
-            <div className="absolute bottom-4 left-4 w-14 h-14 bg-green-400 rounded-2xl flex items-center justify-center animate-pulse shadow-lg">
-              <TrendingUp className="w-7 h-7 text-green-800" />
-            </div>
-            <div className="absolute top-1/2 left-4 w-12 h-12 bg-blue-400 rounded-xl flex items-center justify-center animate-ping shadow-lg">
-              <BookOpen className="w-6 h-6 text-blue-800" />
-            </div>
-            
-            <div className="w-80 h-80 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl flex items-center justify-center relative overflow-hidden">
-              <div className="text-center z-10">
-                <div className="w-32 h-32 bg-gradient-to-br from-orange-400 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center shadow-2xl">
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                    <BookOpen className="w-12 h-12 text-orange-500" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-gray-800 mb-2">Study Smart</div>
-                <div className="text-gray-600 mb-4">Excel in Every Subject</div>
-                <div className="flex justify-center space-x-2">
-                  <div className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></div>
-                  <div className="w-2 h-2 bg-pink-400 rounded-full animate-pulse delay-100"></div>
-                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-200"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={`absolute -top-4 -left-4 ${darkMode ? 'bg-black/80' : 'bg-white/80'} backdrop-blur-sm rounded-xl p-3 border ${darkMode ? 'border-gray-700' : 'border-gray-300'}`}>
-            <div className="text-green-400 text-sm font-bold">95% Success Rate</div>
-          </div>
-          <div className={`absolute -bottom-4 -right-4 ${darkMode ? 'bg-black/80' : 'bg-white/80'} backdrop-blur-sm rounded-xl p-3 border ${darkMode ? 'border-gray-700' : 'border-gray-300'}`}>
-            <div className="text-blue-400 text-sm font-bold">500+ Resources</div>
-          </div>
-        </div>
+        <FounderSection 
+          darkMode={darkMode}
+          customization={customization}
+          colorSchemes={colorSchemes}
+        />
       </div>
     </div>
   );
