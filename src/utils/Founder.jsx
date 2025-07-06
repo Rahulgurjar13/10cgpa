@@ -16,13 +16,13 @@ const FounderSection = ({
       name: "Rahul Gujjar",
       position: "Tech Head Spark E-cell ",
       image: "https://blockchainweek-bu.vercel.app/images/rahul1.jpg",
-      linkedin: "https://linkedin.com/in/alexjohnson"
+      linkedin: "https://www.linkedin.com/in/rahulgurjar7474/"
     },
     {
       name: "Khushi Nain",
       position: "ATC Tech Team Member",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b412?w=240&h=320&fit=crop&crop=face",
-      linkedin: "https://linkedin.com/in/sarahchen"
+      linkedin: "https://www.linkedin.com/in/khushi-nain17/"
     }
   ];
 
