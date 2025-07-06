@@ -117,13 +117,12 @@ const PlaylistsSection = ({
       icon: <Code className="w-5 h-5" />,
       subjects: {
         cpp: {
-          title: "C++ Programming",
+          title: " DSA Study Material",
           color: "from-cyan-500 to-cyan-600",
           playlists: filteredPlaylists.filter(
             (p) =>
-              p.title.toLowerCase().includes("c++") ||
-              p.title.toLowerCase().includes("cpp") ||
-              p.title.toLowerCase().includes("data structure")
+              p.title.toLowerCase().includes("dsa")
+        
           ),
         },
         python: {
