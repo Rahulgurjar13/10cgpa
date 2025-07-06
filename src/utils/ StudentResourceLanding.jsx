@@ -529,7 +529,7 @@ const StudentResourceLanding = () => {
 
   const stats = [
     { number: '500+', label: 'Study Resources', trend: '+25% this month', icon: FileText },
-    { number: '50+', label: 'Video Playlists', trend: '+15% this month', icon: Video },
+    { number: '30+', label: 'Video Playlists', trend: '+15% this month', icon: Video },
     { number: '1200+', label: 'Active Students', trend: '+30% this month', icon: Users },
   ];
 

@@ -29,7 +29,7 @@ const HeroSection = ({ isVisible, activeSubject, setActiveSubject, subjects, cus
               <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-blue-400 rounded-full border-2 border-black flex items-center justify-center text-white font-bold text-sm">C</div>
             </div>
             <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'} ml-4`}>
-              <span className={`${darkMode ? 'text-white' : 'text-gray-900'} font-semibold`}>1200+</span> students achieved 9+ CGPA
+              <span className={`${darkMode ? 'text-white' : 'text-gray-900'} font-semibold`}>200+</span> students achieved 9+ CGPA
             </div>
           </div>
 
