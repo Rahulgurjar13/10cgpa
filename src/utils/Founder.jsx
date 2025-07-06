@@ -17,7 +17,7 @@ blue: { primary: 'from-blue-500 to-blue-700', accent: 'blue-500' },   purple: { 
     },
     {
       name: "Khushi Nain",
-      position: "ATC Tech Team Member",
+      position: "ATC Tech Team Member | 2× Dean’s List Awardee",
       image: "/khushi4.jpeg",
       linkedin: "https://www.linkedin.com/in/khushi-nain17/"
     }
