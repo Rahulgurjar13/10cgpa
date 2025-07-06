@@ -21,7 +21,7 @@ const FounderSection = ({
     {
       name: "Khushi Nain",
       position: "ATC Tech Team Member",
-      image: "/khushi nain.jpeg",
+      image: "/khushi4.jpeg",
       linkedin: "https://www.linkedin.com/in/khushi-nain17/"
     }
   ];
