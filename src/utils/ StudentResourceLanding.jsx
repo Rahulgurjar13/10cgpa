@@ -534,12 +534,11 @@ const StudentResourceLanding = () => {
   ];
 
   const colorSchemes = {
-   
+    pink: { primary: 'from-pink-500 to-pink-700', accent: 'pink-500' },
     blue: { primary: 'from-blue-500 to-blue-700', accent: 'blue-500' },
   purple: { primary: 'from-purple-500 to-purple-700', accent: 'purple-500' },
   green: { primary: 'from-green-500 to-green-700', accent: 'green-500' },
   orange: { primary: 'from-orange-500 to-orange-700', accent: 'orange-500' },
-  pink: { primary: 'from-pink-500 to-pink-700', accent: 'pink-500' },
   red: { primary: 'from-red-500 to-red-700', accent: 'red-500' },
   teal: { primary: 'from-teal-500 to-teal-700', accent: 'teal-500' },
   indigo: { primary: 'from-indigo-500 to-indigo-700', accent: 'indigo-500' },
